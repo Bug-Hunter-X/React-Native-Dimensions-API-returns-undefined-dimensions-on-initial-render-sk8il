@@ -1,0 +1,1 @@
+This bug occurs when using the `Dimensions` API in React Native to get screen dimensions.  The issue is that the dimensions may not be immediately available, especially during the initial render. Accessing `Dimensions.get('window')` or `Dimensions.get('screen')` before the values are ready could result in incorrect or undefined values leading to layout issues or crashes.
